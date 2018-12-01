@@ -36,3 +36,16 @@ or in view:
 use sashsvamir\tingle\TingleAsset;
 $this->registerAssetBundle(TingleAsset::className());
 ```
+
+
+
+If you need support ie9, set classlist polyfill to condition:
+```php
+public $js = [
+  [
+    'https://cdn.jsdelivr.net/npm/classlist-polyfill@1.2.0/src/index.min.js',
+    'condition' => 'lte IE 9',
+    //'position' => View::POS_HEAD,
+  ],
+];
+```
