@@ -45,7 +45,7 @@ public $js = [
   [
     'https://cdn.jsdelivr.net/npm/classlist-polyfill@1.2.0/src/index.min.js',
     'condition' => 'lte IE 9',
-    //'position' => View::POS_HEAD,
+    'position' => \yii\web\View::POS_HEAD,
   ],
 ];
 ```
